@@ -1,4 +1,4 @@
-# HTML - README Doc
+# HTML - README Doc Source: Codeacademy
 **LESSON 1** 
 1. Any visible content should be placed within the opening and closing \<body> tags.
 2. Headings and sub-headings, \<h1> to \<h6> tags, are used to provide titles for sections of content.
