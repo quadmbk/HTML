@@ -2,11 +2,11 @@
 **LESSON 1** 
 1. Any visible content should be placed within the opening and closing <body> tags.
 2. Headings and sub-headings, <h1> to <h6> tags, are used to provide titles for sections of content.
-3. <p>, <span> and <div> tags specify text or blocks.
+3. \<p>, <span> and <div> tags specify text or blocks.
   3.1 <p> is used to define a a paragraph
   3.2 <span></span> is used to mark a grop of text if I want to do something different on it
   3.3 <div> is used to divide a section into blocks. DIfferent properties can be applied on this block then. One attribute of <div> is id="idname" to give an ID to the div block.
-      Syntax = <div id="My Id">
+      Syntax = \<div id="My Id">
 4. The <em>Text</em> will display the "Text" in italics, and <strong>Text</strong> will display "Text" in bold.
 5. Line breaks are created with the <br> tag. But these will only work under <p> blocks
 6. Ordered lists (<ol>) are numbered and unordered lists (<ul>) are bulleted. Each item is to be tagged with <li>Item</li>
