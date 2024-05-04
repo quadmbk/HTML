@@ -53,8 +53,8 @@
 
 
 **LESSON 6(Semantic HTML)**
-1. By using Semantic HTML, we select HTML elements based on their meaning, not on how they are presented. Elements such as <div> and <span> are not semantic elements since they provide no context as to what is inside of those tags.
-2. For example, instead of using a <div> element to contain our header information, we could use a <header> element, which is used as a heading section. By using a <header> tag instead of a <div>, we provide context as to what information is inside of the opening and closing tag.
+1. By using Semantic HTML, we select HTML elements based on their meaning, not on how they are presented. Elements such as \<div> and \<span> are not semantic elements since they provide no context as to what is inside of those tags.
+2. For example, instead of using a \<div> element to contain our header information, we could use a \<header> element, which is used as a heading section. By using a \<header> tag instead of a \<div>, we provide context as to what information is inside of the opening and closing tag.
 3. Why use Semantic HTML?
   3.1 Better SEO
   3.2 Webpage can be displayed on multiple displays as those devices can read the code better now
