@@ -13,5 +13,14 @@
    4.5 boolean. Eg. const boole = true
 5. To find type of the data stored in the variable. command: typeof <varname> Eg. console.log(typeof name). Ouput: string || console.log(typeof empty). Output: object ( and not null. **GOTCHA!!!**)
 6. To execute command in console.log or use variables in console.log: console.log(`Name = ${name} typeof name = ${typeof name}`). Output: Name = shubhsha typeof name = string
+7. String Properties:
+      7.1 name.length: Gives the length of the variable length
+      7.2 name.toUpperCase()
+      7.3 name.toLowerCase()
+      7.4 name.substring(<startindex>, <length of substring>)
+      7.5 name.split(<delimiter>): To split string into Array: name.split('')
+9. Chaining Functions:
+   name = "Hello World". To fetch "Hello" from the previous string and convert it into string, we can do: console.log(name.substring(0,5).toUpperCase())
+
 
 
