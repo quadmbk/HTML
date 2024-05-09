@@ -83,5 +83,5 @@
           const myperson = new Person("shubhsha", 30, "shubhsha@email.com"}; myperson.getAge();
     
                         
-
+17. DOM
 
