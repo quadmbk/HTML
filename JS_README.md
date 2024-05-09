@@ -61,3 +61,27 @@
     14.2 == only matches the content and not the datatype so 10 is equal to '10'. To do strict checking where the conditional passes only if x is a numeric 110, we use ===
     14.3. switch-case: syntax: switch(vaarto check) { case 1: <statements>;break; case 2: <statements>; default:}
 
+15. Functions:
+   15.1 function <func_name> (arg1, arg2) { return val;}
+   15.2 Arrow Function
+
+16. Object Oriented Programming:
+   16.1 Constructor function:
+           function Person(name, age, email) { this.name = name; this.age = age; this.email = email;}; const myperson = new Person("shubhsha", 30, "abc@email.com"); //myperson will hold a object literal
+      16.1.1  We can even add function to above constructor function. Eg. in the function Person, add this: this.getage = function() { return this.age;} ; //NOw : myperson.getage() will return the age;
+      16.1.2  To define these functions outside constructor function body, do this: Person.prototype.getAge = function() { return this.age;};
+   16.2 class: class Person {
+                               constructor(name, age, email) {
+                                  this.name = name;
+                                  this.age = age;
+                                  this.email = email;
+                               }  
+                           getAge() { //function
+                               return this.age; }
+                            }
+          //Object creation
+          const myperson = new Person("shubhsha", 30, "shubhsha@email.com"}; myperson.getAge();
+    
+                        
+
+
