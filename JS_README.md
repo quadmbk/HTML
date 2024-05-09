@@ -21,6 +21,19 @@
       7.5 name.split(<delimiter>): To split string into Array: name.split('')
 9. Chaining Functions:
    name = "Hello World". To fetch "Hello" from the previous string and convert it into string, we can do: console.log(name.substring(0,5).toUpperCase())
+10. Comments: // single line. /* Mulit-line */
+11. Arrays:
+    11.1 Creating an array:
+       11.1.1 using new method = const numbers = new Array(0,1,2,3,4,5); console.log(numbers). Output: [0,1,2,3,4,5]
+       11.1.2 using initialisation = const numbers = [0,1,2,3,4];
+    11.2 We can have multiple datatypes as array elements;
+    11.3 To access single element: numbers[0]
+    11.4 To push element at the end: numbers.push(<element to add>)
+    11.5 To pop element   from the end: numbers.pop()
+    11.6 We can manipulate arrays even if they are const.
+    11.7 To check if some element is an array: Array.isArray(<varname>). REturns true or false
+    11.8 To find index of some element. name.indexOf(0)
+    
 
 
 
