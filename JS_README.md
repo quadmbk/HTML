@@ -46,6 +46,18 @@
                        }
        console.log(person). Output: {name: 'John', age: 30, hobbies: Array(3), address: {…}}. To access speicific items: person.name
     12.2 To add properties like email to above object: person.email = "JOhn.doe@email.com"
-    
-
+13. Loops:
+    13.1 For Loop: for(let i = 0 ; i < 10; i++) { console.log(i); }
+    13.2 while loop
+    13.3 foreach: <arrayvar>.forEach(function(<iteratorname_userdefined>) { console.log(iteratorname); //iteratorname gets the element at each iteration} **);** all is argeument to forEach
+    13.4 map: 
+    13.5 filter
+14. Conditionals:
+    14.1 if-else and if-else if-else(just like c++):
+          const x = 110;
+          if(x==110) {
+             console.log('x is 110');
+          }
+    14.2 == only matches the content and not the datatype so 10 is equal to '10'. To do strict checking where the conditional passes only if x is a numeric 110, we use ===
+    14.3. switch-case: syntax: switch(vaarto check) { case 1: <statements>;break; case 2: <statements>; default:}
 
