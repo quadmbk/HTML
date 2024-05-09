@@ -33,7 +33,19 @@
     11.6 We can manipulate arrays even if they are const.
     11.7 To check if some element is an array: Array.isArray(<varname>). REturns true or false
     11.8 To find index of some element. name.indexOf(0)
-    
 
+12. Object Literals: Like python Disctionaries
+    12.1 const person = {
+                         name: "John",
+                         age: 30,
+                         hobbies: ['sports', 'Movies', 'Books'],
+                         address: {
+                                     street: 'ABC',
+                                     Block: 'B'
+                                  }
+                       }
+       console.log(person). Output: {name: 'John', age: 30, hobbies: Array(3), address: {…}}. To access speicific items: person.name
+    12.2 To add properties like email to above object: person.email = "JOhn.doe@email.com"
+    
 
 
