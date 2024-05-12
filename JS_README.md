@@ -89,10 +89,73 @@
     18.2 To get a HTML element by id attribute: document.getElementById("<idname>"). We can print it using console.log and variable.
     18.3 Another method to do the same task as 18.2 is document.querySelector('<tagname, classname, idname>'). This will only ouput the first match
     18.4 To get all the elements matching the criterian passed as arguement, use document.querySElectorAll('<tag>'). This gives us a NodelIst which vlike an array can be iterated via a for loop. E.g const headings = document.querySelectorAll('h1') //Returns a nodeList of all the h1 tags in the page.
-    18.5 To access any element of the element rteturned by the querySElector(example if <li> tags are returned), use, <var>.children[<index>].
-    18.6 To change text of the element. <var>.children[<index>].innerTExt = 'text';
-    18.7 To change HTML of the element. FOr eg. make the text <h1>, <var>.children[<index>].innerHTML = "<h1>Heelo</h1>";
+    18.5 To access any element of the element rteturned by the querySElector(example if \<li> tags are returned), use, <var>.children[<index>].
+    18.6 To change text of the element. \<var>.children[<index>].innerTExt = 'text';
+    18.7 To change HTML of the element. FOr eg. make the text \<h1>, <var>.children[<index>].innerHTML = "\<h1>Heelo</h1>";
     18.8 To change background of an element, say button with id "btn". const btn = document.querySelector('btn'); btn.**style**.background= 'red';
+    18.9 To Add event listeners.:
+       18.1 Get the element using querySElector. E.g: const btn = document.querySelector('.btn');
+       18.2 use addEventListenerfunction.E.g. : btn.addEventListener('click', (e) => { <call a funciton that does something on clicked>})
+
+Example: Form validation:
+**HTML**
+\<form id="my-form">
+          \<div class="msg">
+                \<h1 id="form-title">Add User</h1>
+                \<div>
+                    \<label for="name">Name:</label>
+                        \<input type="text" id="name"> 
+                \</div>
+                \<div>
+                    \<label for="email">Email:</label>
+                    \<input type="text" id="email">
+                \</div>    
+                \<div>
+                    \<input type="submit" class="btn">
+                \</div>
+            \</div>    
+        \</form>
+**Javascript**
+/ USER FORM SCRIPT
+
+// Put DOM elements into variables
+const myForm = document.querySelector('#my-form');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const msg = document.querySelector('.msg');
+const userList = document.querySelector('#users');
+
+// Listen for form submit
+myForm.addEventListener('submit', onSubmit);
+
+function onSubmit(e) {
+  e.preventDefault();
+  
+  if(nameInput.value === '' || emailInput.value === '') {
+    // alert('Please enter all fields');
+    msg.classList.add('error');
+    msg.innerHTML = 'Please enter all fields';
+
+    // Remove error after 3 seconds
+    setTimeout(() => msg.remove(), 3000);
+  } else {
+    // Create new list item with user
+    const li = document.createElement('li');
+
+    // Add text node with input values
+    li.appendChild(document.createTextNode(`${nameInput.value}: ${emailInput.value}`));
+
+    // Add HTML
+    // li.innerHTML = `<strong>${nameInput.value}</strong>e: ${emailInput.value}`;
+
+    // Append to ul
+    userList.appendChild(li);
+
+    // Clear fields
+    nameInput.value = '';
+    emailInput.value = '';
+  }
+}
     
    
    
