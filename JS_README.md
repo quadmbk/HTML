@@ -80,8 +80,10 @@
                                return this.age; }
                             }
           //Object creation
+          const myobj = new Person("shubhsha", 28, '13 May 1996');
           const myperson = new Person("shubhsha", 30, "shubhsha@email.com"}; myperson.getAge();
     
                         
-17. DOM
-
+18. DOM
+   
+   
