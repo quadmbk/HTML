@@ -99,6 +99,7 @@
 
 Example: Form validation:
 **HTML**
+```
 \<form id="my-form">
           \<div class="msg">
                 \<h1 id="form-title">Add User</h1>
@@ -115,7 +116,9 @@ Example: Form validation:
                 \</div>
             \</div>    
         \</form>
+```
 **Javascript**
+```
 / USER FORM SCRIPT
 
 // Put DOM elements into variables
@@ -156,6 +159,6 @@ function onSubmit(e) {
     emailInput.value = '';
   }
 }
-    
+```
    
    
