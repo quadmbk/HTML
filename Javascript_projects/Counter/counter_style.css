@@ -4,21 +4,35 @@
     box-sizing:border-box;
 }
 
+header {
+    font-size: 35px;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     text-align: center;
     padding: 1rem;
     background-color: #f4f4f4;
+    font-size: 35px;
 }
 #counter-digital {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    
+    font-size: 50px;
+    font-weight: normal;
     text-align: center;
     padding: 1rem;
     margin: auto;
     width: 500px;
     overflow: auto;
     padding: 3rem 2rem;
+}
+
+.btn{
+    font-size: 15px;
+    padding: 1rem;
+    height: 75%;
+    background-color: white;
+    border: single;
+    border-radius: 5px;
 }
