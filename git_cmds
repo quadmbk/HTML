@@ -1,0 +1,15 @@
+  git init : To create a git local repo
+  git commit -m "first commit" : Do a commit
+  git branch -M main : setup branch
+  git remote add origin git@github.com:quadmbk/MachineLearning.git : Add the path to remote repo
+  git push -u origin main  : To push
+
+## Git config commands
+  git config --global user.name Shubhanshu
+  git config --global user.email shubhanshu.sharma20@gmail.com
+## Git SHow logs
+  git show --pretty=oneline
+  git pull git@github.com:quadmbk/HTML.git main
+## Pull main branch from origin
+  git pull origin main
+ git push origin main
